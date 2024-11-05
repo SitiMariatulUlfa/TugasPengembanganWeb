@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Lomba Olahraga</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Mengatur body */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffe5d3, #fff2e5); /* Gradasi latar belakang peach */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5em;
+        }
+
+        /* Header dan Footer */
+        header, footer {
+            background: linear-gradient(135deg, #ff9a85, #ff6f61); /* Gradasi warna peach */
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 2em;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            font-weight: bold;
+            text-align: center; /* Posisi tengah */
+        }
+
+        nav a {
+            color: #ffe5d3; /* Warna teks navbar */
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Main Section */
+        main {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Styling untuk Article dan Aside */
+        .content-wrapper {
+            display: flex;
+            gap: 2em;
+            width: 100%;
+        }
+
+        article, aside {
+            background-color: #fff; /* Warna latar belakang konten */
+            padding: 2em;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(255, 105, 135, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center; /* Posisi tengah untuk heading dan konten */
+        }
+
+        article:hover, aside:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(255, 105, 135, 0.4);
+        }
+
+        article h2, aside h2 {
+            font-size: 1.6em;
+            margin-bottom: 1em;
+            color: #ff9a85; /* Warna judul artikel */
+        }
+
+        .articles {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            flex: 3;
+        }
+
+        /* Styling untuk Aside */
+        aside {
+            flex: 1;
+        }
+
+        /* List Style */
+        ul {
+            margin-left: 1.5em;
+            list-style-type: circle;
+            color: #555;
+            line-height: 1.8;
+            text-align: left; /* Supaya daftar tetap rata kiri */
+        }
+
+        ul li {
+            margin: 0.5em 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+        }
+
+        /* Footer */
+        footer p {
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        /* Button Style */
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff9a85, #ff6f61);
+            color: #fff;
+            padding: 0.7em 1.5em;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #ff4a3d;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(255, 105, 135, 0.3);
+        }
+
+        /* Animasi tambahan */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Tambahkan margin untuk memberi jarak */
+        #intro {
+            margin-bottom: 2em; /* Jarak antara sambutan dan persyaratan pendaftaran */
+        }
+
+        .articles article {
+            margin-bottom: 2em; /* Jarak antara persyaratan pendaftaran dan foto biodata */
+        }
+
+        /* Styling untuk biodata */
+        .biodata {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bagian Header -->
+    <header>
+        <h1>Pendaftaran Peserta Lomba Olahraga</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Tentang</a>
+            <a href="Pendaftaran.html" class="button">Daftar</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Main -->
+    <main>
+        <section id="intro">
+            <article>
+                <h2>Selamat Datang di Lomba Olahraga Nasional</h2>
+                <p>Lomba ini bertujuan untuk mencari bibit-bibit unggul dalam dunia olahraga di Indonesia. Kami mengundang para atlet dari seluruh penjuru negeri untuk bergabung dan menunjukkan bakat mereka.Acara ini bukan hanya sebuah kompetisi, tetapi juga kesempatan untuk membangun jejaring, belajar, dan menginspirasi satu sama lain dalam semangat sportivitas.</p>
+            </article>
+        </section>
+
+        <div class="content-wrapper">
+            <!-- Artikel Utama -->
+            <div class="articles">
+                <article>
+                    <h2>Persyaratan Pendaftaran</h2>
+                    <p>Setiap peserta harus memenuhi persyaratan berikut untuk mendaftar:</p>
+                    <ul>
+                        <li>Warga Negara Indonesia</li>
+                        <li>Berusia 18-35 tahun</li>
+                        <li>Mempunyai pengalaman minimal 1 tahun di bidang olahraga yang dipilih</li>
+                        <li>Melampirkan surat rekomendasi dari organisasi olahraga terkait</li>
+                        <li>Menyertakan sertifikat kesehatan terbaru</li>
+                        <li>Berkomitmen untuk mengikuti seluruh rangkaian acara lomba</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Jadwal dan Lokasi</h2>
+                    <p>Lomba akan diadakan pada tanggal 15 Agustus 2024 di Stadion Gelora Bung Karno, Jakarta. Peserta diharapkan hadir tepat waktu dan membawa peralatan masing-masing.</p>
+                </article>
+            </div>
+
+            <!-- Bagian Aside -->
+            <aside>
+                <h2>Foto & Biodata</h2>
+                <p>Upload foto Anda dan berikan informasi singkat tentang diri Anda, termasuk latar belakang di bidang olahraga.</p>
+                <img src="ulpa.jpg" alt="Foto Peserta" style="width:100%; height:auto; border-radius: 10px;">
+                <div class="biodata">
+                    <p><strong>Nama:</strong> Ulfa</p>
+                    <p><strong>Umur:</strong> 19 tahun</p>
+                    <p><strong>Cabang Olahraga:</strong> Badminton</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>&copy; 2024 Panitia Lomba Olahraga Nasional. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
